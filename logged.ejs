@@ -1,13 +1,96 @@
 <!DOCTYPE html>
- <html>
- <head>
- <title>CURRICULUM</title>
-        <h2>
-        <font color=Yellow > Sobre Henzel</h2>
-          <font color=Yellow >Nome :Henzel Almeida dos santos<br>ºRua Boa Vista,Itapuan,BA<br>ºgraduando em engenharia da computação UNIFCAS-SALVADOR<br>º2 diplomas em Ingles Avançado<br>ºConhecimento Intermediário nas linguagens : c/c++/Python<br>ºBase sólida nas aplicações da ADOBE<br>ºCertificado em RasberryPI<br>ºEsforçado porém muito desanimado por não ter terminado esse site como deveria<br>Faço um café Explendido. </h2>
-            <p></p>
-        <h3>Contato: wpp (71)992691381</h3>
- </head>
-<body background="/images/fundo.jpg"/
- </body>
- </html>
+<html>
+<head>
+   <title>CURRICULUM</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.scroll input{
+  display: none;
+}
+
+.bloco{
+    width:100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.links{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+
+.links label{
+  padding: 10px 0;
+  flex-grow: 1;
+  cursor: pointer;
+  transition: all .4s;
+  text-align: center;
+  font-family: 'arial';
+  font-size: 100%;
+  color:#fff;
+}
+
+.links label:hover{
+    background-color: rgba(255, 255, 255,.2);
+}
+
+#teste{
+  background-color: #7fbd42;
+}
+
+#python{
+  background-color: #69f;
+}
+
+#linux{
+  background-color:#faa;
+}
+
+#flask{
+  background-color: #aaa;
+}
+
+#arduino{
+  background-color: #414950;
+}
+
+}
+
+</style>
+</head>
+<body>
+<nav class="links">
+    <label for="rd_teste">TESTE</label>
+    <label for="rd_python">PYTHON</label>
+    <label for="rd_linux">LINUX</label>
+    <label for="rd_flask">FLASK</label>
+    <label for="rd_arduino">ARDUINO</label>
+</nav>
+
+<div class="scroll">
+    <input type="radio" name="grupo" id="rd_teste" checked="true">
+    <input type="radio" name="grupo" id="rd_python">
+    <input type="radio" name="grupo" id="rd_linux">
+    <input type="radio" name="grupo" id="rd_flask">
+    <input type="radio" name="grupo" id="rd_arduino">
+
+<section class="sections">
+    <section class="bloco" id="teste"></section>
+    <section class="bloco" id="python"></section>
+    <section class="bloco" id="linux"></section>
+    <section class="bloco" id="flask"></section>
+    <section class="bloco" id="arduino"></section>
+
+
+</section>
+</body>
+</html>
