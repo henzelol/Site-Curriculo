@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,25 +43,41 @@
     background-color: rgba(255, 255, 255,.2);
 }
 
-#teste{
-  background-color: #7fbd42;
+#sobremim{
+  background-color: #f00;
+font-family: monospace;
+  font-size: 40px;
+  font-style: italic;
 }
 
-#python{
+#certificacoes{
   background-color: #69f;
+  font-family: monospace;
+    font-size: 40px;
+    font-style: italic;
 }
 
-#linux{
-  background-color:#faa;
+#academico{
+  background-color:#f808;
+  font-family: monospace;
+    font-size: 40px;
+    font-style: italic;
 }
 
-#flask{
+#experiencias{
   background-color: #aaa;
+  font-family: monospace;
+    font-size: 40px;
+    font-style: italic;
 }
 
-#arduino{
+#contato{
   background-color: #414950;
+  font-family: monospace;
+    font-size: 40px;
+    font-style: italic;
 }
+
 .scroll{
   display: flex;
   width: 100vw;
@@ -70,28 +85,29 @@
   overflow: hidden;
 }
 
+
 .sections{
   transition: all .4s;
 }
 
-#rd_teste:checked ~ .sections{
+#rd_sobremim:checked ~ .sections{
   margin-top: 0vh;
 }
 
-#rd_python:checked ~ .sections{
+#rd_certificacoes:checked ~ .sections{
   margin-top: -100vh
 
 }
 
-#rd_linux:checked ~ .sections{
+#rd_academico:checked ~ .sections{
   margin-top: -200vh
 }
 
-#rd_flask:checked ~ .sections{
+#rd_experiencias:checked ~ .sections{
   margin-top: -300vh
 }
 
-#rd_arduino:checked ~ .sections{
+#rd_contato:checked ~ .sections{
   margin-top: -400vh
 }
 
@@ -102,29 +118,28 @@
 </head>
 <body>
 <nav class="links">
-    <label for="rd_teste">TESTE</label>
-    <label for="rd_python">PYTHON</label>
-    <label for="rd_linux">LINUX</label>
-    <label for="rd_flask">FLASK</label>
-    <label for="rd_arduino">ARDUINO</label>
+    <label for="rd_sobremim">SOBRE MIM</label>
+    <label for="rd_certificacoes">CERTIFICAÇÕES</label>
+    <label for="rd_academico">ACADÊMICO</label>
+    <label for="rd_experiencias">EXPERIẼNCIAS</label>
+    <label for="rd_contato">CONTATO</label>
 </nav>
 
 <div class="scroll">
-    <input type="radio" name="grupo" id="rd_teste">
-    <input type="radio" name="grupo" id="rd_python">
-    <input type="radio" name="grupo" id="rd_linux">
-    <input type="radio" name="grupo" id="rd_flask">
-    <input type="radio" name="grupo" id="rd_arduino">
+    <input type="radio" name="grupo" id="rd_sobremim">
+    <input type="radio" name="grupo" id="rd_certificacoes">
+    <input type="radio" name="grupo" id="rd_academico">
+    <input type="radio" name="grupo" id="rd_experiencias">
+    <input type="radio" name="grupo" id="rd_contato">
 
 <section class="sections">
-    <section class="bloco" id="teste"></section>
-    <section class="bloco" id="python"></section>
-    <section class="bloco" id="linux"></section>
-    <section class="bloco" id="flask"></section>
-    <section class="bloco" id="arduino"></section>
+    <section class="bloco" id="sobremim"><ul><li>Nome :Henzel Almeida dos Santos</li><li>19 anos</li><li>Determinado</li><li>Competitivo</li><li>Auto-Crítico</li><li>Gosto peculiar por segurança</li><li>desejo contínuo de aprendizado.</li></ul></section>
+    <section class="bloco" id="certificacoes"><ul><li>Certificação de ingles avançado pela Person</li><li>Certificações de ingles avançado pela Wizard</li><li>Certificação de Rashberry Pi</li></ul></section>
+    <section class="bloco" id="academico"><ul><li>Graduando em Engenharia da Computação</li><li>faculdade UNIFACS-Universidade Salvador</li></ul></section>
+    <section class="bloco" id="experiencias"><ul><li>Intercâmbio em Washigton DC</li><li>Conhecimento intermediário de c/html/CSS</li><li>Conhecimento Básico Linux/c++/python/node.js</li><li>Gosto por Microprocessadores :Rashberry Pi/Arduino</li></ul></section>
+    <section class="bloco" id="contato"><ul><li>TIM WPP(71)99269-1381</li><li>E-mail:henzelmsn3002@hotmail.com</li><li> <a href="https://github.com/henzelol">GITHUB</a> </section>
 
 
 </section>
 </body>
 </html>
-
