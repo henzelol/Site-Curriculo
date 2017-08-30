@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,6 +63,38 @@
 #arduino{
   background-color: #414950;
 }
+.scroll{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sections{
+  transition: all .4s;
+}
+
+#rd_teste:checked ~ .sections{
+  margin-top: 0vh;
+}
+
+#rd_python:checked ~ .sections{
+  margin-top: -100vh
+
+}
+
+#rd_linux:checked ~ .sections{
+  margin-top: -200vh
+}
+
+#rd_flask:checked ~ .sections{
+  margin-top: -300vh
+}
+
+#rd_arduino:checked ~ .sections{
+  margin-top: -400vh
+}
+
 
 }
 
@@ -77,7 +110,7 @@
 </nav>
 
 <div class="scroll">
-    <input type="radio" name="grupo" id="rd_teste" checked="true">
+    <input type="radio" name="grupo" id="rd_teste">
     <input type="radio" name="grupo" id="rd_python">
     <input type="radio" name="grupo" id="rd_linux">
     <input type="radio" name="grupo" id="rd_flask">
@@ -94,3 +127,4 @@
 </section>
 </body>
 </html>
+
